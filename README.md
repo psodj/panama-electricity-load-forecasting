@@ -50,14 +50,14 @@ Both notebooks were fully run before being saved, so you can see every chart and
 
 *("Error" here means MAPE — on average, what percent off was the forecast from what actually happened.)*
 
-Two honest results worth calling out rather than glossing over:
+-Results
 
 - **Prophet, a tool built specifically for this kind of forecasting, actually did the worst.** Its default assumptions about repeating patterns didn't fit this particular data as well as either a plain lookup or a model built from carefully chosen inputs. Not every tool wins on every dataset — and being able to say that plainly is worth more in an interview than pretending everything worked perfectly.
 - **XGBoost's edge over the official forecast is biggest in May 2020** (5.66% vs. 9.06% error) — right in the middle of Panama's COVID-19 disruption to normal demand patterns. A model that gets rebuilt from scratch each week on recent data adjusted to that shift faster than the official process likely could.
 
-## What this means in practice
+## Interpretation
 
-A model isn't actually useful until someone can act on the number, not just admire it. A few ways this translates:
+The model isn't actually useful until someone can act on the number. A few ways this translates:
 
 - **Average MWh off**, not just percent, is the number that matters operationally — it's closer to what a dispatcher would actually plan reserves around. (Both notebooks report this alongside the percentage.)
 - **Forecasting too low** risks a real shortfall, covered by reserve power or short-notice imports — usually at a premium price.
