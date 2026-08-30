@@ -6,7 +6,7 @@ A project that predicts a full week of electricity demand for Panama's national 
 
 ## Why this project
 
-I'm an accountant looking to move into data science, and previously applied for a data scientist role at Black Hills Energy — the feedback was a lack of demonstrated Python experience. This project is a direct answer to that: real utility data, a real forecasting problem, and a way of testing the results that's built to hold up under scrutiny rather than just produce a good-looking number.
+I'm an accountant looking to move into data science, and previously applied for a data scientist role at Black Hills Energy - the feedback was a lack of demonstrated Python experience. This project is a direct answer to that: real utility data, a real forecasting problem, and a way of testing the results that's built to hold up under scrutiny rather than just produce a good-looking number.
 
 The accounting background shows up less in the code itself and more in the habits around it: double-checking a calculated number against a trusted source before relying on it, being upfront about something that *didn't* work as well as hoped instead of only reporting the wins, and describing model accuracy in terms someone doing operational planning would actually use.
 
@@ -24,7 +24,6 @@ The accounting background shows up less in the code itself and more in the habit
 ## What's in this project
 
 | File | What it covers |
-|---|---|
 | `panama_load_eda.ipynb` | Getting to know the data: checking it's clean, spotting anything unusual, and understanding the patterns a model will need to learn |
 | `panama_load_part2.ipynb` | Building the model inputs the right way, testing five different forecasting approaches, and comparing all of them to the utility's real forecast |
 
@@ -43,7 +42,6 @@ Both notebooks were fully run before being saved, so you can see every chart and
 ## Results
 
 | Approach | Average error across 14 weeks |
-|---|---|
 | **XGBoost** | **3.90%** |
 | Official utility forecast | 4.95% |
 | Simple 3-week average | 5.35% |
