@@ -1,14 +1,8 @@
 # Panama Electricity Demand Forecasting
 
-A project that predicts a full week of electricity demand for Panama's national grid, and checks the result against what the utility's own real forecasting process actually achieved — built to demonstrate Python and applied data science skills for a data scientist role at Black Hills Energy.
+A project that predicts a full week of electricity demand for Panama's national grid, and checks the result against what the utility's own real forecasting process actually achieved.
 
 **Bottom line:** a machine learning model (XGBoost) averaged **3.90% error** across 14 test weeks spread over 2019–2020, beating the utility's own real, published forecast (**4.95% error**) on 13 of those 14 weeks.
-
-## Why this project
-
-I'm an accountant looking to move into data science, and previously applied for a data scientist role at Black Hills Energy - the feedback was a lack of demonstrated Python experience. This project is a direct answer to that: real utility data, a real forecasting problem, and a way of testing the results that's built to hold up under scrutiny rather than just produce a good-looking number.
-
-The accounting background shows up less in the code itself and more in the habits around it: double-checking a calculated number against a trusted source before relying on it, being upfront about something that *didn't* work as well as hoped instead of only reporting the wins, and describing model accuracy in terms someone doing operational planning would actually use.
 
 ## The data
 
